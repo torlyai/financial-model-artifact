@@ -1,5 +1,7 @@
 # financial-model-artifact
 
+https://youtu.be/_emas5Vk2wQ?si=wT6_WyWjrVFxG6ax
+
 **English** · [简体中文](README.zh-CN.md)
 
 **Paste a prompt into Claude, answer a short interview, get a live financial model.** Not a spreadsheet. Not an app. A single interactive artifact — model on the front, analysis on the back — built from your business, in your numbers, in a few minutes.
