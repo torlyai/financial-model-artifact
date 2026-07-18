@@ -124,6 +124,8 @@ This repo is the free scratchpad tier: one prompt, one artifact, ephemeral. Perf
 
 When you want the model to *persist* — saved scenarios you can revisit, versioned assumptions, a team that can edit the same model, exports, and a real assessment rather than a self-drawn benchmark — that's **[TorlyAI](https://torly.ai)**. Same philosophy (revenue is an output, the balance sheet ties out), with the durability and rigour a funding conversation needs.
 
+→ **[torly.ai/financial-model](https://torly.ai/financial-model/)** &nbsp;·&nbsp; 中文：**[torly.ai/zh/financial-model](https://torly.ai/zh/financial-model/)**
+
 Use this to think fast. Move to TorlyAI when the model needs to stick.
 
 ## Philosophy
