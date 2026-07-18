@@ -1,5 +1,7 @@
 # financial-model-artifact
 
+**English** · [简体中文](README.zh-CN.md)
+
 **Paste a prompt into Claude, answer a short interview, get a live financial model.** Not a spreadsheet. Not an app. A single interactive artifact — model on the front, analysis on the back — built from your business, in your numbers, in a few minutes.
 
 Revenue is never typed in. It's computed from what actually drives it. The balance sheet ties out every month. And a non-finance founder can read the whole thing.
