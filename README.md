@@ -5,6 +5,11 @@
 Revenue is never typed in. It's computed from what actually drives it. The balance sheet ties out every month. And a non-finance founder can read the whole thing.
 
 <p align="center">
+  <img src="gallery/flip.gif" alt="Flip from the model to the analysis" width="760"><br>
+  <em>One artifact, two sides — flip from the model to the analysis.</em>
+</p>
+
+<p align="center">
   <img src="gallery/model.png" alt="The model — editable assumptions on the left, ten live sheets, headline KPIs" width="880"><br>
   <em>The model — every driver editable on the left; the whole 36-month model recomputes across ten sheets.</em>
 </p>
