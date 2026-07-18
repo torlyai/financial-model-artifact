@@ -52,6 +52,49 @@ There's nothing to run. `PROMPT.md` is a prompt, not a program — it instructs 
 
 The engine is a single pure `computeModel(assumptions)` over 36 months. Every edit re-runs it from scratch — no stored state, no stale cells. That's why moving a slider updates all ten sheets at once.
 
+### The workflow
+
+```mermaid
+flowchart TD
+    A["Paste PROMPT.md into Claude / Claude Code / Codex"] --> B["Agent interviews you:<br/>what drives your business?"]
+    B --> C{"Every driver answered?"}
+    C -->|some gaps| D["Sector presets fill the blanks<br/>(tagged ASSUMED, editable)"]
+    C -->|all given| E["Agent writes one<br/>self-contained HTML artifact"]
+    D --> E
+    E --> F["computeModel(assumptions)<br/>runs 36 months"]
+    F --> G["MODEL page<br/>10 sheets + KPI strip"]
+    F --> H["ANALYSIS page<br/>red flags, benchmarks, verdict"]
+    G --> I["You edit an assumption<br/>or drag a slider"]
+    I -->|instant recompute| F
+```
+
+### The business logic (why the numbers move)
+
+Revenue is never typed in — it falls out of the drivers, then flows through the three statements, and the balance sheet has to tie out.
+
+```mermaid
+flowchart TD
+    subgraph IN["Drivers you control (inputs)"]
+        D1["Launch cohort"]
+        D2["Growth % / mo"]
+        D3["Churn % / mo"]
+        D4["Price / ARPU"]
+        D5["Team, salaries, opex, CAC"]
+        D6["Funding, working capital"]
+    end
+    IN --> CUST["Active customers<br/>= last month + new - churned"]
+    CUST --> REV["Revenue (an OUTPUT)<br/>= active customers x price"]
+    REV --> GP["less COGS<br/>= Gross profit"]
+    GP --> EBIT["less Payroll + Opex + CAC<br/>= EBITDA"]
+    EBIT --> NET["less Depreciation + Tax<br/>= Net income"]
+    NET --> PL["P&L statement"]
+    NET --> CF["Cash flow (indirect)"]
+    NET --> BS["Balance sheet"]
+    BS --> TIE{{"assets = liabilities + equity<br/>— ties out every month ✓"}}
+```
+
+Change any driver on the left and the whole chain re-runs; if the tie-out ever breaks, the model tells you the accounting is wrong.
+
 ## Use it as a Claude Code skill
 
 Drop the skill into your Claude Code skills directory so you can invoke it by name:
