@@ -1,0 +1,20 @@
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs & env
+*.log
+.env
+.env.local
+
+# Generated artifacts (people paste the prompt and get their own — keep the repo clean)
+*.local.html
+scratch/
